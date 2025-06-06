@@ -40,10 +40,11 @@ export default function Post(props) {
     getLikedInfo();
   }, [liked, props.author, props.postName]);
 
-  const handleClick = async (setActive) => {
+  const handleClick = async (setActive,type) => {
     setActive(true);
     setTimeout(() => setActive(false), 150); // effect lasts 150ms
 
+     if (type == "like") {
     const response = await fetch("http://localhost:5000/api/postInt/Like", {
       method: "POST",
       headers: {
@@ -66,6 +67,7 @@ export default function Post(props) {
 
     }
     setLiked(!liked);
+     }
 
   }
 
@@ -94,7 +96,7 @@ export default function Post(props) {
             }}
             onMouseEnter={() => setLikeHover(true)}
             onMouseLeave={() => setLikeHover(false)}
-            onClick={() => handleClick(setLikeActive)}
+            onClick={() => handleClick(setLikeActive,"like")}
           >
             <img
               id="like"
