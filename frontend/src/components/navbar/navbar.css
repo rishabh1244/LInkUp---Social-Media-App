@@ -1,0 +1,65 @@
+.navbar {
+  /* background: linear-gradient(135deg, #1121cb, #2575fc) !important; */
+  /* background: linear-gradient(135deg, #0b0f3d, #1c2373) !important; */
+  background: rgba(46, 46, 46, 0.676) !important;;
+  /* border-radius: 15px 15px 15px 15px; */
+  /* box-shadow: 0 1px 10px rgba(101, 64, 255, 0.5); */
+  /* margin-bottom:5px ; */
+  border-bottom:2px solid rgb(18, 16, 28);
+}
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .dropdown-toggle {
+  color: white !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover,
+.navbar .dropdown-toggle:hover {
+  color: #c7c7ff !important;
+}
+
+.navbar .nav-item.active > .nav-link {
+  color: #c7c7ff !important;
+}
+
+.navbar .nav-link.disabled {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.logout-btn {
+  background-color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 50%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.logout-btn img {
+
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+/* Hover effect: subtle scale and shadow */
+.logout-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Click effect: slight shrink */
+.logout-btn:active {
+  transform: scale(0.95);
+}

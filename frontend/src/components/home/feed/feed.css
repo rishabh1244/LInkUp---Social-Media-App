@@ -1,0 +1,14 @@
+.feed {
+  margin-left: 32%;
+  /* background-color: black; */
+  /* height:100vh; */
+  /* width: fit-content; */
+  /* overflow-Y: scroll; */
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.scrollable {
+  scrollbar-width: none;
+  /* For Firefox */
+}

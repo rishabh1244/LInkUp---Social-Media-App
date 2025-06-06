@@ -1,0 +1,16 @@
+.users-list {
+  width: 300px; /* or whatever width you want */
+  border-left: 1px solid #ccc;
+  color: white;
+  text-align: center;
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+
+
+}
+
+.users{
+    text-align: center;
+    display: flex;
+}
